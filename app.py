@@ -29,7 +29,7 @@ def bill():
     amt=rate*float(hr)
     SendEmail(email,amt,name)
     # l={'name':name,'email':email,'hr':hr}
-    return render_template('billout.html')
+    return render_template('billout.html',name1=name,email1=email,hr1=hr)
     
 
 if __name__=="__main__":
