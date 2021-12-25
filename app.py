@@ -20,7 +20,7 @@ app = Flask(__name__,template_folder='Template')
 def billfeed():
     return render_template('bill.html')
 # @app.route("/details")
-@app.route("/amount",methods=['POST','GET'])
+@app.route("/amount",methods=['POST'])
 def bill():
     rate=10.5
     name=request.form['Name']
